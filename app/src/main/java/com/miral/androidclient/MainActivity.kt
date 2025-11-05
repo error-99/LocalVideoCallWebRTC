@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity(), SignalingClient.Listener{
         webRTCClient = WebRTCClient(this, eglBase, signalingClient)
 
         webRTCClient.initPeerConnection(localView, remoteView)
-        signalingClient.connect("room1", "ws://192.168.29.220:8080")
+        signalingClient.connect("room1", "ws://192.168.1.101:8080")
         btnCall.visibility = View.VISIBLE
         // Start the call as the initiating user
         btnCall.setOnClickListener {
